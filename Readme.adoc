@@ -5,6 +5,5 @@ To install change variables `domain`, `realm`, `hostname`, `password` in file `i
 [source,sh]
 ----
 su
-
 sh install.sh
 ----
