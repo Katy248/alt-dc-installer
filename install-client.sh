@@ -9,8 +9,7 @@ password='Pa$$word'
 
 hostnamectl set-hostname $host.$domain
 
-nmcli_connections=$(nmcli --fields NAME --terse connection show active)
-connection=$(sed '2' $nmcli_connections) 
+connection=$(nmcli --fields NAME --terse connection show active)
 
 nmcli \
     connection modify $connection \
