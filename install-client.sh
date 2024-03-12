@@ -12,7 +12,7 @@ hostnamectl set-hostname $host.$domain
 connection=$(nmcli --fields NAME --terse connection show active)
 
 nmcli \
-    connection modify $connection \
+    connection modify "$connection" \
     ipv4.dns $dc_ip_address
 
 systemctl restart NetworkManager
