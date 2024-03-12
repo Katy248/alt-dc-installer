@@ -4,8 +4,10 @@ hostname=dc.$realm # -> dc.base.ito
 
 password='Pa$$word'
 
-sh ./scripts/disable-and-stop-services.sh
-sh ./scripts/install-samba-dc.sh
+sh ./scripts/disable-and-stop-services.sh \
+    smb nmb krb5kdc slapd bind
+sh ./scripts/install-packages.sh \
+    task-samba-dc
 sh ./scripts/remove-configs.sh
 
 # set hostname of current machine
