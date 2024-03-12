@@ -2,7 +2,7 @@ domain=base # -> base
 realm=$domain.alt # -> base.ito
 hostname=dc.$realm # -> dc.base.ito
 
-password = 'Pa$$word'
+password='Pa$$word'
 
 sh ./scripts/disable-and-stop-services.sh
 sh ./scripts/install-samba-dc.sh
