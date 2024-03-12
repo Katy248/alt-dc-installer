@@ -1,0 +1,10 @@
+= Alt Domain controller installer
+
+To install change variables `domain`, `realm`, `hostname`, `password` in file `install.sh` then rn script with:
+
+[source,sh]
+----
+su
+
+sh install.sh
+----
