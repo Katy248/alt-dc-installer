@@ -1,9 +1,15 @@
 = Alt Domain controller installer
 
-To install change variables `domain`, `realm`, `hostname`, `password` in file `install.sh` then rn script with:
+== DC
+
+To install DC change variables `domain`, `realm`, `hostname`, `password` in file `install-dc.sh` then rn script with:
 
 [source,sh]
 ----
 su
-sh install.sh
+sh install-dc.sh
 ----
+
+== Client
+
+To install client use `install-client.sh` scripts. Don't forget to change variables
